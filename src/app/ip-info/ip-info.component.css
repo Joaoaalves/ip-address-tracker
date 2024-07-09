@@ -39,3 +39,31 @@
   margin: 0px;
   margin-top: 8px;
 }
+
+@media (max-width: 950px) {
+  :host{
+    width: 90%;
+  }
+  .ip-info{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+  }
+  .info-wrapper:not(:last-child){
+    border: none;
+  }
+
+  .info-wrapper{
+    text-align: center;
+    padding: 12px;
+  }
+
+  .subtitle{
+    font-size: 10px;
+  }
+
+  .info{
+    margin-top: 7px;
+    font-size: 20px;
+  }
+}
