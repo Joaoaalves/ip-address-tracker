@@ -54,7 +54,7 @@
 @media (max-width: 950px) {
   :host{
     width: 90%;
-    transform: translateY(60%);
+    transform: translateY(55%);
   }
   .ip-info{
     display: flex;
@@ -77,11 +77,5 @@
   .info{
     margin-top: 7px;
     font-size: 20px;
-  }
-}
-
-@media (max-width: 370px) {
-  :host{
-    transform: translateY(65%);
   }
 }
