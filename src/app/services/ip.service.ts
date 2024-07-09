@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class IpInfoService {
-  private apiUrl = 'https://api.ipify.org?format=json';
+  private apiUrl = 'https://api.bigdatacloud.net/data/client-ip';
   private ipInfoProxyUrl = 'https://cors-anywhere.herokuapp.com/http://ip-api.com/json/';
 
   constructor(private http: HttpClient) { }
