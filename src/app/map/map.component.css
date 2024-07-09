@@ -3,3 +3,7 @@
   height: calc(100vh - 280px);
   margin: 0!important;
 }
+
+.ol-control {
+  visibility: hidden;
+}
