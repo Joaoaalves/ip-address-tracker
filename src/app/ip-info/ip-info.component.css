@@ -1,5 +1,4 @@
 :host{
-  width: 80%;
   position: absolute;
   bottom: 0;
   transform: translateY(50%);
@@ -7,7 +6,7 @@
 }
 .ip-info{
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 350px);
   padding: 37px 0px;
   border-radius: 15px;
   box-shadow: 0px 4px 8px 2px #00000010;
@@ -38,6 +37,18 @@
   color: #2c2c2c;
   margin: 0px;
   margin-top: 8px;
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 1400px) {
+  .ip-info{
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    padding: 37px 0px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px 2px #00000010;
+    background-color: white;
+  }
 }
 
 @media (max-width: 950px) {

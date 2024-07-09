@@ -5,6 +5,7 @@ import View from 'ol/View';
 import { OSM } from 'ol/source';
 import TileLayer from 'ol/layer/Tile';
 import { useGeographic } from 'ol/proj';
+import { defaults as defaultControls } from 'ol/control';  // Import default controls
 
 @Component({
   selector: 'app-map',
@@ -20,7 +21,6 @@ export class MapComponent implements OnInit, OnChanges {
 
   ngOnInit(): void {
     useGeographic();
-
     this.initMap();
   }
 
@@ -43,6 +43,7 @@ export class MapComponent implements OnInit, OnChanges {
         zoom: 2,
         maxZoom: 18,
       }),
+      controls: defaultControls({ zoom: false, rotate: false })
     });
 
     this.updateMapCenter();
