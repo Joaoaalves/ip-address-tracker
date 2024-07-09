@@ -28,6 +28,7 @@
 form{
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 40%;
 }
 
@@ -45,13 +46,14 @@ input:focus-visible{
 }
 
 button{
-  padding: 22.5px;
+  padding: 23px;
   border: none;
   background-color: black;
   color: white;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   cursor: pointer;
+  display: flex;
 }
 
 button:hover{
