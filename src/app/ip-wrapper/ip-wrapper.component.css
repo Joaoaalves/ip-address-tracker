@@ -1,10 +1,20 @@
+:host{
+  height: 280px!important;
+  display: flex;
+  width: 100vw;
+}
 .wrapper{
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
-  height: 40vh;
-  background-color: #5161C4;
+  height: 280px;
+  background-image: url('/assets/pattern-bg-desktop.jpg');
+  object-fit: contain;
+  object-position: center;
+  background-repeat: no-repeat;
+  background-color: #4a4fad;
 }
 
 .title{

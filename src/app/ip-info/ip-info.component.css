@@ -43,6 +43,7 @@
 @media (max-width: 950px) {
   :host{
     width: 90%;
+    transform: translateY(10%);
   }
   .ip-info{
     display: flex;

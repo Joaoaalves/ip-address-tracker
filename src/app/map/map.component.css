@@ -1,11 +1,5 @@
 .map {
   width: 100vw;
-  height: 60vh;
+  height: calc(100vh - 280px);
   margin: 0!important;
-}
-
-@media (max-width:950px) {
-  .map{
-    height: 50vh;
-  }
 }
