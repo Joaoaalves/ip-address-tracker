@@ -53,6 +53,6 @@ export class MapComponent implements OnInit, OnChanges {
     const center = [this.longitude, this.latitude];
     const view = this.map.getView();
     view.setCenter(center);
-    view.setZoom(10);
+    view.setZoom(15);
   }
 }

@@ -19,7 +19,7 @@ export class IpWrapperComponent implements OnInit {
 
   ngOnInit(): void {
     this.ipInfoService.getPublicIp().subscribe((response: any) => {
-      this.ip = response.query;
+      this.ip = response.ip;
       this.fetchIpInfo(this.ip);
     });
   }

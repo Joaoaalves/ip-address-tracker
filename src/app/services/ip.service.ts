@@ -6,8 +6,8 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class IpInfoService {
-
-  private apiUrl = 'https://cors-anywhere.herokuapp.com/http://ip-api.com/json/';;
+  private apiUrl = 'https://api.ipify.org?format=json';
+  private ipInfoProxyUrl = 'https://cors-anywhere.herokuapp.com/http://ip-api.com/json/';
 
   constructor(private http: HttpClient) { }
 
@@ -16,6 +16,6 @@ export class IpInfoService {
   }
 
   getIpInfo(ip: string): Observable<any> {
-    return this.http.get(`${this.apiUrl}${ip}`);
+    return this.http.get(`${this.ipInfoProxyUrl}${ip}`);
   }
 }
