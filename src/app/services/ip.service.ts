@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class IpInfoService {
 
-  private apiUrl = 'http://ip-api.com/json/';
+  private apiUrl = 'https://cors-anywhere.herokuapp.com/http://ip-api.com/json/';;
 
   constructor(private http: HttpClient) { }
 
