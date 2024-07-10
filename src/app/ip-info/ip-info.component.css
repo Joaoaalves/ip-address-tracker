@@ -1,8 +1,6 @@
 :host{
-  position: absolute;
-  bottom: 0;
-  transform: translateY(50%);
   z-index: 100;
+  margin-top: 24px;
 }
 .ip-info{
   display: grid;
@@ -52,6 +50,9 @@
 }
 
 @media (max-width: 950px) {
+  :host{
+    width: 80%;
+  }
   .ip-info{
     display: flex;
     flex-direction: column;
@@ -63,7 +64,7 @@
 
   .info-wrapper{
     text-align: center;
-    padding: 12px;
+    padding: 6px;
   }
 
   .subtitle{
@@ -71,7 +72,7 @@
   }
 
   .info{
-    margin-top: 7px;
+    margin-top: 0px;
     font-size: 20px;
   }
 }
