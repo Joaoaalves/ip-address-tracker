@@ -15,11 +15,15 @@ export class IpWrapperComponent implements OnInit {
   ip: string = '';
   data: any = null;
 
-  constructor(private ipInfoService: IpInfoService, private coordinatesService: CoordinatesService) {}
+  constructor(
+    private ipInfoService: IpInfoService,
+    private coordinatesService: CoordinatesService
+  ) {}
 
   ngOnInit(): void {
     this.ipInfoService.getPublicIp().subscribe((response: any) => {
       this.ip = response.ipString;
+      console.log(this.ip);
       this.fetchIpInfo(this.ip);
     });
   }
@@ -33,7 +37,9 @@ export class IpWrapperComponent implements OnInit {
 
   onSubmit(event: Event): void {
     event.preventDefault();
-    const ipInput = (event.target as HTMLFormElement).elements.namedItem('ip') as HTMLInputElement;
+    const ipInput = (event.target as HTMLFormElement).elements.namedItem(
+      'ip'
+    ) as HTMLInputElement;
     if (ipInput.value) {
       this.fetchIpInfo(ipInput.value);
     }
